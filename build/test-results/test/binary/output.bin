@@ -1,0 +1,180 @@
+_20:37:47.975 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+B20:37:49.912 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+61 > GET https://petstore.swagger.io/#/pet/getPetById1
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+71 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+"1 > Accept-Encoding: gzip,deflate
+
+
+B20:37:49.912 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+;1 > GET https://petstore.swagger.io/#/pet/findPetsByStatus
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+71 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+"1 > Accept-Encoding: gzip,deflate
+
+
+B20:37:49.915 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+21 > POST https://petstore.swagger.io/#/pet/addPet
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 133
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+71 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+"1 > Accept-Encoding: gzip,deflate
+†{"id":"1","category":{"id":0,"name":"Kiko"},"name":"doggie","photoUrls":["ruta"],"tags":[{"id":0,"name":"dog"}],"status":"available"}
+
+B20:37:49.915 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+51 > PUT https://petstore.swagger.io/#/pet/updatePet1
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 126
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+71 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+"1 > Accept-Encoding: gzip,deflate
+{"id":1,"category":{"id":0,"name":"Firu"},"name":"doggie","photoUrls":["ruta"],"tags":[{"id":0,"name":"dog"}],"status":"sold"}
+
+]20:37:51.399 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1477
+1 < 405
+(1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Content-Length: 150
+1 < Connection: keep-alive
+1 < Server: nginx
+#1 < Access-Control-Allow-Origin: *
+51 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+‰1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+<html>
+-<head><title>405 Not Allowed</title></head>
+<body>
++<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+	</body>
+	</html>
+
+
+]20:37:51.399 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1478
+1 < 405
+(1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Content-Length: 150
+1 < Connection: keep-alive
+1 < Server: nginx
+#1 < Access-Control-Allow-Origin: *
+51 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+‰1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+<html>
+-<head><title>405 Not Allowed</title></head>
+<body>
++<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+	</body>
+	</html>
+
+
+]20:37:51.402 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1483
+1 < 200
+(1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Connection: keep-alive
+1 < Server: nginx
+11 < Last-Modified: Wed, 20 Sep 2023 16:41:04 GMT
+1 < Vary: Accept-Encoding
+1 < ETag: "650b20a0-147"
++1 < Expires: Tue, 26 Sep 2023 01:37:51 GMT
+!1 < Cache-Control: max-age=86400
+#1 < Access-Control-Allow-Origin: *
+51 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+‰1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 < Accept-Ranges: bytes
+3<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+F    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+?    <link rel="stylesheet" type="text/css" href="index.css" />
+R    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+R    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+
+  </head>
+
+	  <body>
+     <div id="swagger-ui"></div>
+D    <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
+O    <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+F    <script src="./swagger-initializer.js" charset="UTF-8"> </script>
+
+  </body>
+</html>
+
+
+]20:37:51.402 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1484
+1 < 200
+(1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Connection: keep-alive
+1 < Server: nginx
+11 < Last-Modified: Wed, 20 Sep 2023 16:41:04 GMT
+1 < Vary: Accept-Encoding
+1 < ETag: "650b20a0-147"
++1 < Expires: Tue, 26 Sep 2023 01:37:51 GMT
+!1 < Cache-Control: max-age=86400
+#1 < Access-Control-Allow-Origin: *
+51 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+‰1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 < Accept-Ranges: bytes
+3<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+F    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+?    <link rel="stylesheet" type="text/css" href="index.css" />
+R    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+R    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+
+  </head>
+
+	  <body>
+     <div id="swagger-ui"></div>
+D    <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
+O    <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+F    <script src="./swagger-initializer.js" charset="UTF-8"> </script>
+
+  </body>
+</html>
+
+
+:---------------------------------------------------------
+-feature: classpath:users/get/pet-get.feature
+7scenarios:  2 | passed:  2 | failed:  0 | time: 3.9320
+:---------------------------------------------------------
+
+Š20:37:52.425 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:users/get/pet-get.feature
+:---------------------------------------------------------
+/feature: classpath:users/post/pet-post.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 1.9370
+:---------------------------------------------------------
+
+Œ20:37:52.508 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:users/post/pet-post.feature
+:---------------------------------------------------------
+-feature: classpath:users/put/pet-put.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 1.9369
+:---------------------------------------------------------
+
+Š20:37:52.610 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:users/put/pet-put.feature
+Karate version: 1.2.0.RC4
+8======================================================
+6elapsed:   5.38 | threads:    4 | thread time: 7.81 
+4features:     3 | skipped:    1 | efficiency: 0.36
+-scenarios:    4 | passed:     4 | failed: 0
+8======================================================
+
+FHTML report: (paste into browser to view) | Karate version: 1.2.0.RC4
+Xfile:///C:/Users/marco/IdeaProjects/ConsumoAPI/build/karate-reports/karate-summary.html
+D===================================================================
+

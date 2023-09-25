@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="users.ManagementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-25T01:37:47" hostname="PC_MH" time="5.792">
+  <properties/>
+  <testcase name="testParallel()" classname="users.ManagementTest" time="5.792"/>
+  <system-out><![CDATA[20:37:47.975 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+20:37:49.912 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/#/pet/getPetById1
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:37:49.912 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/#/pet/findPetsByStatus
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:37:49.915 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/#/pet/addPet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 133
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":"1","category":{"id":0,"name":"Kiko"},"name":"doggie","photoUrls":["ruta"],"tags":[{"id":0,"name":"dog"}],"status":"available"}
+
+20:37:49.915 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/#/pet/updatePet1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 126
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"id":1,"category":{"id":0,"name":"Firu"},"name":"doggie","photoUrls":["ruta"],"tags":[{"id":0,"name":"dog"}],"status":"sold"}
+
+20:37:51.399 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1477
+1 < 405
+1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Content-Length: 150
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+20:37:51.399 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1478
+1 < 405
+1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Content-Length: 150
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+20:37:51.402 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1483
+1 < 200
+1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Last-Modified: Wed, 20 Sep 2023 16:41:04 GMT
+1 < Vary: Accept-Encoding
+1 < ETag: "650b20a0-147"
+1 < Expires: Tue, 26 Sep 2023 01:37:51 GMT
+1 < Cache-Control: max-age=86400
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 < Accept-Ranges: bytes
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="./swagger-initializer.js" charset="UTF-8"> </script>
+  </body>
+</html>
+
+
+20:37:51.402 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1484
+1 < 200
+1 < Date: Mon, 25 Sep 2023 01:37:51 GMT
+1 < Content-Type: text/html
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Last-Modified: Wed, 20 Sep 2023 16:41:04 GMT
+1 < Vary: Accept-Encoding
+1 < ETag: "650b20a0-147"
+1 < Expires: Tue, 26 Sep 2023 01:37:51 GMT
+1 < Cache-Control: max-age=86400
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, OPTIONS
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+1 < Accept-Ranges: bytes
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="./swagger-initializer.js" charset="UTF-8"> </script>
+  </body>
+</html>
+
+
+---------------------------------------------------------
+feature: classpath:users/get/pet-get.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 3.9320
+---------------------------------------------------------
+
+20:37:52.425 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:users/get/pet-get.feature
+---------------------------------------------------------
+feature: classpath:users/post/pet-post.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.9370
+---------------------------------------------------------
+
+20:37:52.508 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:users/post/pet-post.feature
+---------------------------------------------------------
+feature: classpath:users/put/pet-put.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.9369
+---------------------------------------------------------
+
+20:37:52.610 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:users/put/pet-put.feature
+Karate version: 1.2.0.RC4
+======================================================
+elapsed:   5.38 | threads:    4 | thread time: 7.81 
+features:     3 | skipped:    1 | efficiency: 0.36
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0.RC4
+file:///C:/Users/marco/IdeaProjects/ConsumoAPI/build/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
