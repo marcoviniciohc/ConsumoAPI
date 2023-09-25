@@ -5,9 +5,13 @@ Este es un proyecto de automatización de pruebas de consumo de APIs
 Las pruebas están centradas en el sitio web https://petstore.swagger.io/ con los siguientes escenarios:
 
 • Añadir una mascota a la tienda
+
 • Consultar la mascota ingresada previamente (Búsqueda por ID)
+
 • Actualizar el nombre de la mascota y el estatus de la mascota a “sold”
+
 • Consultar la mascota modificada por estatus (Búsqueda por estatus)
+
 
 ## Pre requisitos para ejecutar 📋
 - Java version "19.0.2" 2023-01-17 o superior y JDK (variables de entorno configuradas).
